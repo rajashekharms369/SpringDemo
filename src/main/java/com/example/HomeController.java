@@ -14,4 +14,9 @@ public class HomeController {
     public ResponseEntity<String> sayHello(){
         return new ResponseEntity<>("Hello world", HttpStatus.OK);
     }
+
+    @GetMapping("/welcome")
+    public ResponseEntity<String> welcome(){
+        return new ResponseEntity<>("Welcome to my app", HttpStatus.OK);
+    }
 }
